@@ -1,0 +1,105 @@
+.service {
+    padding-top: 39px;
+    position: relative;
+
+    .menu__container {
+        top: 0;
+    }
+
+    .service__item {
+        max-width: 264px;
+        margin-bottom: 77px;
+
+        p {
+            font-weight: 400;
+            font-size: 0.9rem;
+            line-height: 1rem;
+
+            &:first-child {
+                font-size: 1.5rem;
+                padding-bottom: 33px;
+            }
+        }
+    }
+
+    .service__dec-container {
+        border-left: 1px solid #232323;
+        padding: 28px 0 300px 25px;
+        position: relative;
+        margin: 20px 0 0 27px;
+        @media screen and (min-width: 1400px) {
+            padding: 32px 0 70px 20px;
+        }
+    }
+
+    .service__text {
+        padding-right: 150px;
+        margin-bottom: 95px;
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.3rem;
+        }
+    }
+
+    .display-4 {
+        margin-bottom: 8px;
+    }
+
+    .service__caption {
+        left: -80px;
+        top: 170px;
+        transform: rotate(-90deg);
+
+        p {
+            font-weight: 400;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                display: block;
+                left: -17px;
+                top: -7px;
+                height: 249px;
+                width: 1px;
+                background-color: #d4d4d4;
+            }
+        }
+    }
+
+    .service__bottom-block {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 96px;
+        width: 100%;
+        height: 204px;
+        background-color: #232323;
+
+        .position-relative {
+            height: 100%;
+        }
+    }
+
+    .service__bottom-container {
+        padding: 52px 0 0 65px;
+        
+        p {
+            line-height: 1.31rem;
+            max-width: 807px;
+
+            &:first-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .service__bottom-img {
+        position: absolute;
+        bottom: -26px;
+        right: 0;
+        width: 76%;
+        height: 26px;
+    }
+}

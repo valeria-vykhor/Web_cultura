@@ -1,0 +1,101 @@
+.video__wrapper {
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
+    pointer-events: all;
+    @media screen and (min-width: 768px) {
+        height: 876px;
+    }
+
+    .video__iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video__poster {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background:url('../img/team-bg.png') no-repeat bottom;
+        background-size: 100% auto;
+        opacity: 1;
+        transition: opacity 800ms, height 0s;
+    }
+
+    .video__poster:before {
+        content: '';
+        position: absolute;
+        top: 33%;
+        left: 47.2%;
+        border: 85px solid transparent;
+        border-bottom: 145px solid #ebebeb;
+        transform: rotate(15deg);
+        transition: border-color 300ms;
+        opacity: 0.9;
+    }
+
+    .video__poster:after {
+        content: '';
+        position: absolute;
+        top: 52.2%;
+        left: 51.8%;
+        border: 11px solid transparent;
+        border-left: 20px solid #2f2f2f;
+        transition: border-color 300ms;
+    }
+}
+
+.team__active {
+    .video__wrapper {
+        background-color: #000;
+    }
+    .video__poster {
+        opacity: 0;
+        height: 0;
+        transition-delay: 0s, 800ms;
+    }
+
+    .team__content-wrapp {
+        display: none;
+    }
+}
+  
+.team {
+    position: relative;
+
+    &__content-wrapp {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        padding-top: 37px;
+    }
+
+    .logo__flex-container {
+        height: 184px;
+    }
+
+    .menu__container {
+        top: -20px;
+    }
+
+    .team__text-wrapp {
+        margin-left: 70px;
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.2rem;
+        }
+    }
+}

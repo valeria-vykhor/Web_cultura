@@ -1,0 +1,133 @@
+.review-carousel {
+    padding-top: 25px;
+    padding-left: 60px;
+    position: absolute;
+    width: auto;
+
+    .review__item-container {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 182px;
+        }
+    }
+
+    .review__item-text {
+        margin-left: 28px;
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.4rem;
+        }
+    }
+
+    .review__name {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .text-muted {
+        color: rgba(177, 177, 177, 255);
+        margin-bottom: 10px;
+    }
+
+    .review__caption {
+        font-style: italic;
+        color: rgba(9, 9, 9, 255);
+        font-weight: 300;
+    }
+
+    .owl-prev {
+        position: relative;
+        width: 63px;
+        height: 10px;
+        padding: 5px;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+        
+        @media screen and (min-width: 768px) {
+            width: 135px;
+        }
+        
+        span {
+            display: none;
+        }
+        
+        &:before {
+            position: absolute;
+            content: '';
+            width: 63px;
+            height: 1px;
+            background-color: #191919;
+            top: 3px;
+            left: 0;
+        
+            @media screen and (min-width: 768px) {
+                width: 135px;
+            }
+        }
+        
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -10px;
+            border: 2.5px solid transparent;
+            border-right: 5.5px solid #191919;
+        }
+    }
+        
+    .owl-next {
+        position: relative;
+        width: 63px;
+        height: 10px;
+        padding: 5px;
+        margin-left: 30px;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+        
+        @media screen and (min-width: 768px) {
+            width: 135px;
+            margin-left: 67px !important;
+        }
+        
+        span {
+            display: none;
+        }
+        
+        &:before {
+            position: absolute;
+            content: '';
+            width: 63px;
+            height: 1px;
+            background-color: #191919;
+            top: 3px;
+            left: 0;
+        
+            @media screen and (min-width: 768px) {
+                width: 135px;
+            }
+        }
+        
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: -10px;
+            border: 2.5px solid transparent;
+            border-left: 5.5px solid #191919;
+        }
+    }
+
+    .owl-nav {
+        display: block !important;
+        position: absolute;
+        bottom: -178px;
+        left: 74px;
+    }
+}

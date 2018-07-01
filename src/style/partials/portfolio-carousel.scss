@@ -1,0 +1,163 @@
+.portfolio-carousel {
+    max-width: 1390px;
+    margin: 139px auto 50px;
+
+    .item {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            border-bottom: 18px solid transparent;
+            border-left: 18px solid #232323;
+            z-index: 1;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            border-bottom: 18px solid transparent;
+            border-right: 18px solid #232323;
+            z-index: 1;
+        }
+
+        img {
+            height: 298px;
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+
+    .item_container {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            border-top: 18px solid transparent;
+            border-right: 18px solid #232323;
+            z-index: 1;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            border-top: 18px solid transparent;
+            border-left: 18px solid #232323;
+            z-index: 1;
+        }
+    }
+
+    p {
+        @extend .text-uppercase;
+        padding: 21px 0 0 25px;
+        font-weight: 700;
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+
+    .owl-prev {
+
+        &:hover {
+            background-color: transparent !important;
+        }
+        
+        position: relative;
+        width: 63px;
+        height: 10px;
+        padding: 5px;
+        
+        @media screen and (min-width: 768px) {
+            width: 135px;
+        }
+        
+        span {
+            display: none;
+        }
+        
+        &:before {
+            position: absolute;
+            content: '';
+            width: 63px;
+            height: 1px;
+            background-color: #d9d9d9;
+            top: 5px;
+            left: 0;
+        
+            @media screen and (min-width: 768px) {
+                width: 135px;
+            }
+        }
+        
+        &:after {
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: -10px;
+            border: 2.5px solid transparent;
+            border-right: 5.5px solid #d9d9d9;
+        }
+    }
+
+    .owl-next {
+
+        &:hover {
+            background-color: transparent !important;
+        }
+        
+        position: relative;
+        width: 63px;
+        height: 10px;
+        padding: 5px;
+        margin-left: 30px;
+        
+        @media screen and (min-width: 768px) {
+            width: 135px;
+            margin-left: 72px !important;
+        }
+        
+        span {
+            display: none;
+        }
+        
+        &:before {
+            position: absolute;
+            content: '';
+            width: 63px;
+            height: 1px;
+            background-color: #d9d9d9;
+            top: 5px;
+            left: 0;
+        
+            @media screen and (min-width: 768px) {
+                width: 135px;
+            }
+        }
+        
+        &:after {
+            position: absolute;
+            content: '';
+            top: 3px;
+            right: -10px;
+            border: 2.5px solid transparent;
+            border-left: 5.5px solid #d9d9d9;
+        }
+    }
+
+    .owl-nav {
+        position: absolute;
+        top: -194px;
+        width: 100%;
+        margin-top: 0;
+        right: 80px;        
+    }
+}

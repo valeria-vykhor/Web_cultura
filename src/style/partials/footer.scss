@@ -1,0 +1,82 @@
+.footer {
+    padding: 55px 0 100px;
+
+    &__social-container {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 9px;
+        }
+
+        p {
+            @extend .text-uppercase;
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: rgba(35, 35, 35, 255);
+        }
+    }
+
+    &__caption {
+        color: rgba(35, 35, 35, 255);
+        font-weight: 100;
+        @extend .text-uppercase;
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    &__title {
+        @extend .text-uppercase;
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: rgba(35, 35, 35, 255);
+        letter-spacing: 1px;
+        margin-bottom: 13px;
+        position: relative;
+        
+            &:after {
+                position: absolute;
+                content: '';
+                height: 1px;
+                background-color: #232323;
+                top: 8px;
+            }
+
+       & + p {
+            margin-bottom: 33px;
+            font-size: 0.9rem;
+            color: rgba(35, 35, 35, 255);
+        }
+    }
+
+    p.text-uppercase {
+        font-size: 0.78rem;
+    }
+
+    &__copyright {
+        font-size: 0.8rem;
+    }
+
+    &__address {
+
+        &:after {
+            width: 71px;
+            left: 117px;
+        }
+    }
+
+    &__number {
+
+        &:after {
+            width: 41px;
+            left: 77px;
+        }
+    }
+
+    &__email {
+        &:after {
+            width: 127px;
+            left: 54px;
+        } 
+    }
+}

@@ -1,0 +1,64 @@
+.consult {
+    background-color: #232323;
+    padding-top: 80px;
+    padding-bottom: 95px;
+
+    .menu__container {
+        top: -22px;
+    }
+
+    &__form {
+        max-width: 524px;
+        margin: -96px auto 0;
+
+        input, textarea {
+            width: 100%;
+            background-color: transparent;
+            border-bottom: 1px solid #5a5a5a;
+            color: #fff;
+
+            &::placeholder {
+                color: #fff;
+                @extend .text-uppercase;
+                font-size: 0.75rem;
+            }
+        }
+
+        input {
+            height: 81px;
+            margin-bottom: 1px;
+        }
+
+        textarea {
+            height: 99px;
+            margin: 29px 0 22px;
+        }
+
+        label {
+            cursor: pointer;
+            color: #5a5a5a;
+            @extend .text-uppercase;
+            font-size: 0.82rem;
+        }
+
+        button {
+            @extend .text-uppercase;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__form-title {
+        margin-bottom: 30px;
+
+        p {
+            @extend .text-uppercase;
+            font-family: $caps;
+            font-weight: 900;
+            font-size: 2.4rem;
+            line-height: 2.69rem;
+        }
+    }
+}

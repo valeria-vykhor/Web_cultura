@@ -1,0 +1,22 @@
+{
+  "name": "web_cultura",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "valeria-vykhor <valeria.vykhor@gmail.com>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "*",
+    "bootstrap": "4.1.0",
+    "owl.carousel" : "2.3.4"
+  }
+}

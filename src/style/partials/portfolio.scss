@@ -1,0 +1,54 @@
+.portfolio {
+    background-color: #232323;
+    padding-top: 96px;
+    overflow: hidden;
+
+    .portfolio__wrapp {
+        @media screen and (min-width: 768px) {
+
+        }
+        margin-right: -230px;
+    }
+
+    .menu__container {
+        top: -70px;
+    }
+
+    &__container {
+        max-width: 1140px;
+        margin: 0 auto;
+        background-color: #fff;
+        position: relative;
+    }
+
+    &__btn-container {
+        display: flex;
+        background-color: transparent;
+        position: absolute;
+        top: 92px;
+        left: 0;
+
+        button {
+            height: 49px;
+            padding: 0 22px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+
+            &:first-child {
+                color: rgba(1, 1, 1, 255);
+                background-color: #fff;
+            }
+
+            &:last-child {
+                border: 1px solid #fff;
+                color: #fff;
+                margin-left: 7px;
+            }
+        }
+    }
+}
+
+.portfolio__after {
+    width: 50%;
+    margin-top: -2px;
+}
