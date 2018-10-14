@@ -1,25 +1,39 @@
 .menu {
     position: relative;
 
-    .menu__container {
+    &__container {
         transform: rotate(90deg);
         display: flex;
         align-items: flex-start;
         position: absolute;
-        top: 75px;
-        right: -80px;
+        top: 105px;
+        right: -100px;
+
+        @media screen and (min-width: 768px) {
+            top: 75px;
+            right: -80px;
+        }
     }
 
     p {
-        margin-left: 16px;
+        margin-left: 25px;
         font-weight: 500;
         @extend .text-uppercase;
-        font-size: 0.77rem;
+        font-size: 1.1rem;
         letter-spacing: 1px;
         padding-top: 4px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 16px;
+            font-size: 0.77rem;
+        }
     }
 
-    img {
+    &__img {
         transform: rotate(-90deg);
+
+        @media screen and (min-width: 768px) {
+            width: 23px;
+        }
     }
 }

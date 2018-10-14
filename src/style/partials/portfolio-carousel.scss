@@ -1,15 +1,33 @@
 .portfolio-carousel {
     max-width: 1390px;
-    margin: 139px auto 50px;
+    margin: 126px auto 30px;
+
+    @media screen and (min-width: 768px) {
+        margin: 139 auto 50px;
+    }
 
     .item {
+
+        img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+
+            @media screen and (min-width: 500px) {
+                height: 298px;
+            }
+        }
+    }
+
+    .item_decoration {
         position: relative;
 
         &:before {
             position: absolute;
             content: '';
-            top: 0;
-            left: 0;
+            top: -1px;
+            left: -1px;
             border-bottom: 18px solid transparent;
             border-left: 18px solid #232323;
             z-index: 1;
@@ -18,29 +36,22 @@
         &:after {
             position: absolute;
             content: '';
-            top: 0;
-            right: 0;
+            top: -1px;
+            right: -1px;
             border-bottom: 18px solid transparent;
             border-right: 18px solid #232323;
             z-index: 1;
         }
-
-        img {
-            height: 298px;
-            width: 100%;
-            object-fit: cover;
-            overflow: hidden;
-        }
     }
 
-    .item_container {
+    .item_decoration-bottom {
         position: relative;
 
         &:before {
             position: absolute;
             content: '';
-            bottom: 0;
-            right: 0;
+            bottom: -1px;
+            right: -1px;
             border-top: 18px solid transparent;
             border-right: 18px solid #232323;
             z-index: 1;
@@ -49,8 +60,8 @@
         &:after {
             position: absolute;
             content: '';
-            bottom: 0;
-            left: 0;
+            bottom: -1px;
+            left: -1px;
             border-top: 18px solid transparent;
             border-left: 18px solid #232323;
             z-index: 1;
@@ -76,7 +87,7 @@
         height: 10px;
         padding: 5px;
         
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 412px) {
             width: 135px;
         }
         
@@ -93,7 +104,7 @@
             top: 5px;
             left: 0;
         
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 412px) {
                 width: 135px;
             }
         }
@@ -120,7 +131,7 @@
         padding: 5px;
         margin-left: 30px;
         
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 412px) {
             width: 135px;
             margin-left: 72px !important;
         }
@@ -138,7 +149,7 @@
             top: 5px;
             left: 0;
         
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 412px) {
                 width: 135px;
             }
         }
@@ -155,9 +166,17 @@
 
     .owl-nav {
         position: absolute;
-        top: -194px;
+        top: -78px;
         width: 100%;
-        margin-top: 0;
-        right: 80px;        
+        margin-top: 0;  
+        
+        @media screen and (min-width: 768px) {
+            top: -194px;
+            right: 80px;
+        }
+    }
+
+    .m-t-50 {
+        margin-top: 50px;
     }
 }

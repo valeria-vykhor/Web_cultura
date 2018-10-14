@@ -18,7 +18,7 @@
                     </div>
                     <div class="menu">
                         <div class="menu__container">
-                            <img src="img/menu.png">
+                            <img class="menu__img" src="img/menu.png">
                             <p>меню</p>
                             <p>portfolio</p>
                         </div>
@@ -37,15 +37,17 @@
         <div class="bg-wrapp">
             <section class="service">
                 <div class="container">
-                    <div class="logo__flex-container">
-                        <div class="logo">
-                            <img src="img/logo.png">
-                        </div>
-                        <div class="menu">
-                            <div class="menu__container">
-                                <img src="img/menu.png">
-                                <p>меню</p>
-                                <p>portfolio</p>
+                    <div class="d-none d-md-block">
+                        <div class="logo__flex-container">
+                            <div class="logo">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="menu">
+                                <div class="menu__container">
+                                    <img class="menu__img" src="img/menu.png">
+                                    <p>меню</p>
+                                    <p>portfolio</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -59,7 +61,7 @@
                             <p>Наши продукты наполнены креативным и уникальным дизайном, новейшими технологиями
                                             и красивой анимацией</p>
                          </div>
-                        <div class="row justify-content-between">
+                        <div class="row justify-content-between service__item-container">
                             <div class="service__item col-12 col-md">
                                 <p class="text-center">I</p>
                                 <p>Мы создаем самые эффективные 
@@ -105,20 +107,26 @@
             <section class="team">
                 <div class="video__wrapper">
                     <iframe class="video__iframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/G4cJ4wviwS8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
-                    <button class="video__poster"></button>
+                    <div class="video__poster-container">
+                        <button class="video__poster">
+                            <img src="img/play-btn.png" alt="play">
+                        </button>
+                    </div>
                  </div>
                  <div class="team__content-wrapp">
                     <div class="team__content container text-white">
-                        <div class="logo__flex-container">
-                            <div class="logo">
-                                <img src="img/logo-wt.png">
-                            </div>
-                            <div class="menu">
-                                <div class="menu__container">
-                                    <img src="img/menu-wt.png">
-                                    <p>меню</p>
-                                    <p>portfolio</p>
-                                 </div>
+                        <div class="d-none d-md-block">
+                            <div class="logo__flex-container">
+                                <div class="logo">
+                                    <img src="img/logo-wt.png">
+                                </div>
+                                <div class="menu">
+                                    <div class="menu__container">
+                                        <img class="menu__img" src="img/menu-wt.png">
+                                        <p>меню</p>
+                                        <p>portfolio</p>
+                                     </div>
+                                </div>
                             </div>
                         </div>
                         <div class="team__text-wrapp">
@@ -131,13 +139,13 @@
             </section>
             <div class="portfolio text-white">
                 <div class="container">
-                    <div class="logo__flex-container">
+                    <div class="logo__flex-container d-none d-md-block">
                         <div class="logo">
                             <img src="img/logo-wt.png">
                         </div>
                         <div class="menu">
                             <div class="menu__container">
-                                <img src="img/menu-wt.png">
+                                <img class="menu__img" src="img/menu-wt.png">
                                 <p>меню</p>
                             </div>
                         </div>
@@ -147,64 +155,105 @@
                     <div class="owl-carousel portfolio-carousel owl-theme">
                         <div class="item">
                             <div class="item_container">
-                                <img src="img/portfolio-1.jpg" data-merge="2" alt="portfolio image">
+                                <div class="item_decoration">
+                                    <img src="img/portfolio-1.jpg" data-merge="2" alt="portfolio image">
+                                    <div class="item_decoration-bottom"></div>
+                                </div>
+                                <p>RED BULL</p>
+                                <div class="d-md-none">
+                                    <div class="item_decoration">
+                                        <img class="m-t-50" src="img/portfolio-2.png" data-merge="2" alt="portfolio image">
+                                        <div class="item_decoration-bottom"></div>
+                                    </div>
+                                    <p>SAMSUNG</p>
+                                </div>
                             </div>
-                            <p>RED BULL</p>
+                        </div>
+                        <div class="item remove-item d-md-block">
+                            <div class="item_container">
+                                <div class="item_decoration">
+                                    <img src="img/portfolio-2.png" data-merge="2" alt="portfolio image">
+                                    <div class="item_decoration-bottom"></div>
+                                </div>
+                                <p>SAMSUNG</p>
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item_container">
-                                <img src="img/portfolio-2.png" data-merge="2" alt="portfolio image">
+                                <div class="item_decoration">
+                                    <img src="img/portfolio-3.png" data-merge="2" alt="portfolio image">
+                                    <div class="item_decoration-bottom"></div>
+                                </div>
+                                <p>Coca cola</p>
+                                <div class="d-md-none">
+                                    <div class="item_decoration">
+                                        <img class="m-t-50" src="img/portfolio-1.jpg" data-merge="2" alt="portfolio image">
+                                        <div class="item_decoration-bottom"></div>
+                                    </div>
+                                    <p>RED BULL</p>
+                                </div>
                             </div>
-                            <p>SAMSUNG</p>
+                        </div>
+                        <div class="item remove-item d-md-block">
+                            <div class="item_container">
+                                <div class="item_decoration">
+                                    <img src="img/portfolio-1.jpg" data-merge="2" alt="portfolio image">
+                                    <div class="item_decoration-bottom"></div>
+                                </div>
+                                <p>RED BULL</p>
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item_container">
-                                <img src="img/portfolio-3.png" data-merge="2" alt="portfolio image">
+                                <div class="item_decoration">
+                                    <img src="img/portfolio-1.jpg" data-merge="2" alt="portfolio image">
+                                    <div class="item_decoration-bottom"></div>
+                                </div>
+                                <p>RED BULL</p>
+                                <div class="d-md-none">
+                                    <div class="item_decoration">
+                                        <img class="m-t-50" src="img/portfolio-2.png" data-merge="2" alt="portfolio image">
+                                        <div class="item_decoration-bottom"></div>
+                                    </div>
+                                    <p>SAMSUNG</p>
+                                </div>  
                             </div>
-                            <p>Coca cola</p>
                         </div>
-                        <div class="item">
+                        <div class="item remove-item d-md-block">
                             <div class="item_container">
-                                <img src="img/portfolio-1.jpg" data-merge="2" alt="portfolio image">
+                                <div class="item_decoration">
+                                    <img src="img/portfolio-2.png" data-merge="2" alt="portfolio image">
+                                    <div class="item_decoration-bottom"></div>
+                                </div>
+                                <p>SAMSUNG</p>
                             </div>
-                            <p>RED BULL</p>
-                        </div>
-                        <div class="item">
-                            <div class="item_container">
-                                <img src="img/portfolio-2.png" data-merge="2" alt="portfolio image">
-                            </div>
-                            <p>SAMSUNG</p>
-                        </div>
-                        <div class="item">
-                            <div class="item_container">
-                                <img src="img/portfolio-3.png" data-merge="2" alt="portfolio image">
-                            </div>
-                            <p>Coca cola</p>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__container">
-                    <img src="img/portfolio-bg.png" alt="image">
+                    <img class="img-fluid" src="img/portfolio-bg.png" alt="image">
                     <div class="portfolio__btn-container">
                         <button>Бесплатная консультация</button>
                         <button>Узнать стоимость</button>
                     </div>
                 </div>
             </div>
-            <div class="portfolio__after">
+            <div class="portfolio__after d-none d-md-block">
                 <img class="img-fluid" src="img/portfolio-after.png" alt="image">
             </div>
             <section class="advantages">
                 <div class="container">
-                    <div class="logo__flex-container">
-                        <div class="logo">
-                            <img src="img/logo.png">
-                        </div>
-                        <div class="menu">
-                            <div class="menu__container">
-                                <img src="img/menu.png">
-                                <p>меню</p>
-                                <p>portfolio</p>
+                    <div class="d-none d-md-block">
+                        <div class="logo__flex-container">
+                            <div class="logo">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="menu">
+                                <div class="menu__container">
+                                    <img class="menu__img" src="img/menu.png">
+                                    <p>меню</p>
+                                    <p>portfolio</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -251,15 +300,17 @@
             </section>
             <section class="review">
                 <div class="container">
-                    <div class="logo__flex-container">
-                        <div class="logo">
-                            <img src="img/logo.png">
-                        </div>
-                        <div class="menu">
-                            <div class="menu__container">
-                                <img src="img/menu.png">
-                                <p>меню</p>
-                                <p>portfolio</p>
+                    <div class="d-none d-md-block">
+                        <div class="logo__flex-container">
+                            <div class="logo">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="menu">
+                                <div class="menu__container">
+                                    <img class="menu__img" src="img/menu.png">
+                                    <p>меню</p>
+                                    <p>portfolio</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -327,21 +378,23 @@
                         <div class="review__bg"></div>
                     </div>
                 </div>
-                <div class="review__bg-bottom"></div>
+                <div class="review__bg-bottom d-none d-md-block"></div>
             </section>
         </div>
         <section class="consult text-white">
             <div class="container">
-                <div class="logo__flex-container">
-                    <div class="logo">
-                        <img src="img/logo-wt.png">
-                    </div>
-                    <div class="menu">
-                        <div class="menu__container">
-                            <img src="img/menu-wt.png">
-                            <p>меню</p>
-                            <p>portfolio</p>
-                         </div>
+                <div class="d-none d-md-block">
+                    <div class="logo__flex-container">
+                        <div class="logo">
+                            <img src="img/logo-wt.png">
+                        </div>
+                        <div class="menu">
+                            <div class="menu__container">
+                                <img class="menu__img" src="img/menu-wt.png">
+                                <p>меню</p>
+                                <p>portfolio</p>
+                             </div>
+                        </div>
                     </div>
                 </div>
                 <div class="consult__form-wrapp">
@@ -355,7 +408,7 @@
                         <input type="text" placeholder="телефон">
                         <input type="text" placeholder="email">
                         <textarea placeholder="комментарий"></textarea>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <div class="d-flex justify-content-between align-items-start align-items-md-end consult__btn-container">
                             <button type="submit">отправить</button>
                             <label>+ прикрепить файл<input class="d-none" type="file"></label>
                         </div>
@@ -365,31 +418,36 @@
         </section>
         <footer class="footer">
             <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-12 col-md">
-                        <p class="footer__title footer__address">Адрес студии:</p>
-                        <p>Украина, Киев, ул. Щорса 36</p>
+                <div class="row align-items-md-end footer__item-container">
+                    <div class="col-4 col-lg footer__item">
+                        <div>
+                            <p class="footer__title footer__address">Адрес студии:</p>
+                            <p>Украина, Киев, ул. Щорса 36</p>
+                        </div>
                         <div class="footer__social-container">
                             <p>Instagram</p>
                             <img src="img/instagram.png" alt="Instagram">
                         </div>
                     </div>
-                    <div class="col-12 col-md">
-                        <p class="footer__title footer__number">телефон:</p>
-                        <p>+38 095 631 21 55</p>
+                    <div class="col-4 col-lg footer__item">
+                        <div>
+                            <p class="footer__title footer__number">телефон:</p>
+                            <p>+38 095 631 21 55</p>
+                        </div>
                         <div class="footer__social-container">
                             <p>facebook</p>
                             <img src="img/fb.png" alt="Facebook">
                         </div>
                     </div>
-                    <div class="col-12 col-md">
-                        <p class="footer__title footer__email">email:</p>
-                        <p class="text-uppercase">sales@webcultura.com.ua</p>
+                    <div class="col-4 col-lg footer__item">
+                        <div>
+                            <p class="footer__title footer__email">email:</p>
+                            <p class="text-uppercase">sales@webcultura.com.ua</p>
+                        </div>
                         <p class="footer__copyright">2018 Web cultura studio</p>
                     </div>
-                    <div class="col-12 col-md-auto footer__caption">
-                        <p>Будем рады</p>
-                        <p>сотрудничеству</p>
+                    <div class="col-12 col-lg-auto footer__caption">
+                        <p>Будем рады сотрудничеству</p>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,13 @@
 .video__wrapper {
     margin: 0 auto;
     position: relative;
-    height: 400px;
+    height: 650px;
     pointer-events: all;
+
+    @media screen and (min-width: 1025px) {
+        min-height: 100vh;
+    }
+    
     @media screen and (min-width: 768px) {
         height: 876px;
     }
@@ -17,38 +22,24 @@
         height: 100%;
     }
 
-    .video__poster {
+    .video__poster-container {
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        background:url('../img/team-bg.png') no-repeat bottom;
-        background-size: 100% auto;
+        background:url('../img/team-bg.png') no-repeat top;
+        background-size: cover;
         opacity: 1;
         transition: opacity 800ms, height 0s;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
 
-    .video__poster:before {
-        content: '';
-        position: absolute;
-        top: 33%;
-        left: 47.2%;
-        border: 85px solid transparent;
-        border-bottom: 145px solid #ebebeb;
-        transform: rotate(15deg);
-        transition: border-color 300ms;
-        opacity: 0.9;
-    }
-
-    .video__poster:after {
-        content: '';
-        position: absolute;
-        top: 52.2%;
-        left: 51.8%;
-        border: 11px solid transparent;
-        border-left: 20px solid #2f2f2f;
-        transition: border-color 300ms;
+        @media screen and (min-width: 576px) {
+            padding-top: 0;
+        }
     }
 }
 
@@ -56,7 +47,7 @@
     .video__wrapper {
         background-color: #000;
     }
-    .video__poster {
+    .video__poster-container {
         opacity: 0;
         height: 0;
         transition-delay: 0s, 800ms;
@@ -69,6 +60,13 @@
   
 .team {
     position: relative;
+
+    .display-4 {
+        @media screen and (min-width: 500px) and (max-width: 767px) {
+            font-size: 3.5rem !important;
+            line-height: 3rem !important;
+        }
+    }
 
     &__content-wrapp {
         position: absolute;
@@ -92,6 +90,10 @@
 
     .team__text-wrapp {
         margin-left: 70px;
+
+        @media screen and (max-width: 767px) {
+            padding-top: 100px;
+        }
 
         p {
             font-size: 1.15rem;

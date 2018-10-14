@@ -1,26 +1,42 @@
 .review {
-    padding-top: 135px;
-    padding-bottom: 333px;
+    padding-bottom: 180px;
     overflow: hidden;
     position: relative;
+    
+    @media screen and (min-width: 1025px) {
+        min-height: 100vh;
+    }
+
+    @media screen and (min-width: 445px) {
+        padding-bottom: 149px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 135px;
+        padding-bottom: 333px;
+    }
 
     &__dec-container {
         border-left: 1px solid #232323;
-        padding: 48px 0 361px 40px;
+        padding: 48px 0 361px 25px;
         position: relative;
         margin: 10px 0 0 27px;
 
-        &:after {
-            position: absolute;
-            content: '';
-            width: 7px;
-            height: 7px;
-            bottom: -123px;
-            left: -3px;
-            display: block;
-            border-radius: 50%;
-            background-color: #232323;
-            z-index: 2;
+        @media screen and (min-width: 768px) {
+            padding: 48px 0 361px 40px;
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 7px;
+                height: 7px;
+                bottom: -123px;
+                left: -3px;
+                display: block;
+                border-radius: 50%;
+                background-color: #232323;
+                z-index: 2;
+            }
         }
     }
 
@@ -30,7 +46,11 @@
 
     &__text {
         position: relative;
-        padding-bottom: 45px;
+        padding-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 45px;
+        }
 
         p {
             font-size: 1.15rem;

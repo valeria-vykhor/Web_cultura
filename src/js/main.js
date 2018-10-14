@@ -3,6 +3,8 @@
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 
 $(document).ready(function(){
+    deleteItems();
+
     $(".portfolio-carousel").owlCarousel({
         loop: true,
         margin: 10,
@@ -14,7 +16,7 @@ $(document).ready(function(){
         smartSpeed: 700,
         responsive:{
             0:{
-                items: 3
+                items: 2
             },
             768:{
                 items: 5
@@ -36,6 +38,9 @@ $(document).ready(function(){
         smartSpeed: 700,
         responsive:{
             0:{
+                items: 2
+            },
+            495:{
                 items: 5
             },
             768:{
@@ -59,5 +64,11 @@ $(document).ready(function(){
         var src = iframe.data('src');
         wrapper.closest('.team').addClass('team__active');
         iframe.attr('src',src);
+      }
+
+      function deleteItems() {
+        if ($('body').width() <= 767) {
+            $('div.remove-item').remove();
+        }
       }
 });

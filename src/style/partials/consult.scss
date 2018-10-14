@@ -1,7 +1,23 @@
 .consult {
     background-color: #232323;
-    padding-top: 80px;
-    padding-bottom: 95px;
+    padding-top: 120px;
+    padding-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        background-color: #232323;
+        padding-top: 80px;
+        padding-bottom: 95px;
+    }
+
+    @media screen and (min-width: 1025px) {
+        min-height: 100vh;
+    }
+
+    &__form-wrapp {
+        @media screen and (min-width: 485px) and (max-width: 767px) {
+            padding: 0 64px;
+        }
+    }
 
     .menu__container {
         top: -22px;
@@ -25,40 +41,78 @@
         }
 
         input {
-            height: 81px;
-            margin-bottom: 1px;
+            margin-bottom: 7px;
+            height: 30px;
+            padding-left: 10px;
+
+            @media screen and (min-width: 768px) {
+                height: 81px;
+                margin-bottom: 1px;
+                padding-left: 0;
+            }
         }
 
         textarea {
-            height: 99px;
-            margin: 29px 0 22px;
+            margin: 31px 0 13px;
+            height: 25px;
+            padding-left: 10px;
+
+            @media screen and (min-width: 768px) {
+                height: 99px;
+                margin: 29px 0 22px;
+                padding-left: 0;
+            }
         }
 
         label {
             cursor: pointer;
             color: #5a5a5a;
             @extend .text-uppercase;
-            font-size: 0.82rem;
+            font-size: 0.75rem;
+
+            @media screen and (min-width: 768px) {
+                font-size: 0.82rem;
+            }
         }
 
         button {
             @extend .text-uppercase;
             color: #fff;
             font-weight: 700;
-            font-size: 1.5rem;
+            font-size: 0.75rem;
             letter-spacing: 1px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.5rem;
+            }
         }
     }
 
     &__form-title {
-        margin-bottom: 30px;
+        margin-bottom: 12px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
 
         p {
             @extend .text-uppercase;
-            font-family: $caps;
-            font-weight: 900;
-            font-size: 2.4rem;
-            line-height: 2.69rem;
+            font-family: $condensed;
+            font-size: 2rem;
+            line-height: 2.1rem;
+
+            @media screen and (min-width: 768px) {
+                font-family: $caps;
+                font-weight: 900;
+                font-size: 2.4rem;
+                line-height: 2.69rem;
+            }
+        }
+    }
+
+    &__btn-container {
+        @media screen and (max-width: 767px) {
+            padding: 0 10px;
         }
     }
 }
