@@ -11,19 +11,19 @@
 <body>
     <div>
         <header class="header">
-            <div class="container">
-                <div class="logo__flex-container">
-                    <div class="logo">
-                        <img src="img/logo.png">
-                    </div>
-                    <div class="menu">
-                        <div class="menu__container">
-                            <img class="menu__img" src="img/menu.png">
-                            <p>меню</p>
-                            <p>portfolio</p>
-                        </div>
+            <div class="logo__flex-container">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+                <div class="menu">
+                    <div class="menu__container">
+                        <img class="menu__img" src="img/menu.png">
+                        <p>меню</p>
+                        <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
                     </div>
                 </div>
+            </div>
+            <div class="container">
                 <div class="header__caption">
                     <div class="center-block">
                         <p>web sites of new generation</p>
@@ -36,21 +36,21 @@
         </header>
         <div class="bg-wrapp">
             <section class="service">
-                <div class="container">
-                    <div class="d-none d-md-block">
-                        <div class="logo__flex-container">
-                            <div class="logo">
-                                <img src="img/logo.png">
-                            </div>
-                            <div class="menu">
-                                <div class="menu__container">
-                                    <img class="menu__img" src="img/menu.png">
-                                    <p>меню</p>
-                                    <p>portfolio</p>
-                                </div>
+                <div class="d-none d-md-block">
+                    <div class="logo__flex-container">
+                        <div class="logo">
+                            <img src="img/logo.png">
+                        </div>
+                        <div class="menu">
+                            <div class="menu__container">
+                                <img class="menu__img" src="img/menu.png">
+                                <p>меню</p>
+                                <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="container">
                     <div class="service__dec-container">
                         <div class="position-absolute service__caption">
                             <p>что мы делаем?</p>
@@ -114,21 +114,21 @@
                     </div>
                  </div>
                  <div class="team__content-wrapp">
-                    <div class="team__content container text-white">
-                        <div class="d-none d-md-block">
-                            <div class="logo__flex-container">
-                                <div class="logo">
-                                    <img src="img/logo-wt.png">
-                                </div>
-                                <div class="menu">
-                                    <div class="menu__container">
-                                        <img class="menu__img" src="img/menu-wt.png">
-                                        <p>меню</p>
-                                        <p>portfolio</p>
-                                     </div>
-                                </div>
+                    <div class="d-none d-md-block">
+                        <div class="logo__flex-container">
+                            <div class="logo">
+                                <img src="img/logo-wt.png">
+                            </div>
+                            <div class="menu">
+                                <div class="menu__container text-white">
+                                    <img class="menu__img" src="img/menu-wt.png">
+                                    <p>меню</p>
+                                    <button onclick="scrollIntoElement('portfolio-link')" class="text-white">portfolio</button>
+                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="team__content container text-white">
                         <div class="team__text-wrapp">
                             <p class="display-4">Привет! Это мы!</p>
                             <p>Тебя приветсвует команда Web cultura.</p>
@@ -137,19 +137,19 @@
                     </div>
                  </div>
             </section>
-            <div class="portfolio text-white">
-                <div class="container">
-                    <div class="logo__flex-container d-none d-md-block">
-                        <div class="logo">
-                            <img src="img/logo-wt.png">
-                        </div>
-                        <div class="menu">
-                            <div class="menu__container">
-                                <img class="menu__img" src="img/menu-wt.png">
-                                <p>меню</p>
-                            </div>
+            <div class="portfolio text-white" id="portfolio-link">
+                <div class="logo__flex-container d-none d-md-block">
+                    <div class="logo">
+                        <img src="img/logo-wt.png">
+                    </div>
+                    <div class="menu">
+                        <div class="menu__container">
+                            <img class="menu__img" src="img/menu-wt.png">
+                            <p>меню</p>
                         </div>
                     </div>
+                </div>
+                <div class="container">
                 </div>
                 <div class="portfolio__wrapp">
                     <div class="owl-carousel portfolio-carousel owl-theme">
@@ -233,8 +233,8 @@
                 <div class="portfolio__container">
                     <img class="img-fluid" src="img/portfolio-bg.png" alt="image">
                     <div class="portfolio__btn-container">
-                        <button>Бесплатная консультация</button>
-                        <button>Узнать стоимость</button>
+                        <button onclick="scrollIntoElement('consult-form')">Бесплатная консультация</button>
+                        <button onclick="scrollIntoElement('consult-form')">Узнать стоимость</button>
                     </div>
                 </div>
             </div>
@@ -242,21 +242,21 @@
                 <img class="img-fluid" src="img/portfolio-after.png" alt="image">
             </div>
             <section class="advantages">
-                <div class="container">
-                    <div class="d-none d-md-block">
-                        <div class="logo__flex-container">
-                            <div class="logo">
-                                <img src="img/logo.png">
-                            </div>
-                            <div class="menu">
-                                <div class="menu__container">
-                                    <img class="menu__img" src="img/menu.png">
-                                    <p>меню</p>
-                                    <p>portfolio</p>
-                                </div>
+                <div class="d-none d-md-block">
+                    <div class="logo__flex-container">
+                        <div class="logo">
+                            <img src="img/logo.png">
+                        </div>
+                        <div class="menu">
+                            <div class="menu__container">
+                                <img class="menu__img" src="img/menu.png">
+                                <p>меню</p>
+                                <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="container">
                     <div class="advantages__dec-container">
                         <div class="advantages__text">
                             <p class="display-4">мы не подведем</p>
@@ -299,21 +299,21 @@
                 </div>
             </section>
             <section class="review">
-                <div class="container">
-                    <div class="d-none d-md-block">
-                        <div class="logo__flex-container">
-                            <div class="logo">
-                                <img src="img/logo.png">
-                            </div>
-                            <div class="menu">
-                                <div class="menu__container">
-                                    <img class="menu__img" src="img/menu.png">
-                                    <p>меню</p>
-                                    <p>portfolio</p>
-                                </div>
+                <div class="d-none d-md-block">
+                    <div class="logo__flex-container">
+                        <div class="logo">
+                            <img src="img/logo.png">
+                        </div>
+                        <div class="menu">
+                            <div class="menu__container">
+                                <img class="menu__img" src="img/menu.png">
+                                <p>меню</p>
+                                <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="container">
                     <div class="review__dec-container">
                         <div class="review__text">
                             <p class="display-4">отзывы</p>
@@ -381,7 +381,7 @@
                 <div class="review__bg-bottom d-none d-md-block"></div>
             </section>
         </div>
-        <section class="consult text-white">
+        <section class="consult text-white" id="consult-form">
             <div class="container">
                 <div class="d-none d-md-block">
                     <div class="logo__flex-container">
@@ -389,10 +389,10 @@
                             <img src="img/logo-wt.png">
                         </div>
                         <div class="menu">
-                            <div class="menu__container">
+                            <div class="menu__container text-white">
                                 <img class="menu__img" src="img/menu-wt.png">
                                 <p>меню</p>
-                                <p>portfolio</p>
+                                <button onclick="scrollIntoElement('portfolio-link')" class="text-white">portfolio</button>
                              </div>
                         </div>
                     </div>

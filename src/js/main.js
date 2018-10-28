@@ -19,6 +19,9 @@ $(document).ready(function(){
                 items: 2
             },
             768:{
+                items: 3
+            },
+            1024:{
                 items: 5
             },
             1400:{
@@ -57,18 +60,23 @@ $(document).ready(function(){
         var poster = $(this);
         var wrapper = poster.closest('.video__wrapper');
         videoPlay(wrapper);
-      });
+    });
       
-      function videoPlay(wrapper) {
+    function videoPlay(wrapper) {
         var iframe = wrapper.find('.video__iframe');
         var src = iframe.data('src');
         wrapper.closest('.team').addClass('team__active');
         iframe.attr('src',src);
-      }
+    }
 
-      function deleteItems() {
+    function deleteItems() {
         if ($('body').width() <= 767) {
             $('div.remove-item').remove();
         }
-      }
+    }
 });
+
+function scrollIntoElement(a) {
+    var element = document.getElementById(a);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start', });
+}

@@ -16,6 +16,12 @@
         display: flex;
         justify-content: space-between;
         min-height: 212px;
+        max-width: 1160px !important;
+        padding: 0 10px;
+
+        @media screen and (min-width: 1400px) {
+            max-width: 1360px !important;
+        }
     }
 
     .header__caption {
@@ -82,9 +88,5 @@
                 margin-top: 31px;
             }
         }
-    }
-
-    .logo {
-        margin-left: 10px;
     }
 }

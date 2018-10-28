@@ -1,6 +1,6 @@
 .review-carousel {
     position: absolute;
-    width: auto;
+    width: 100%;
 
     @media screen and (min-width: 768px) {
         padding-top: 25px;
@@ -141,11 +141,13 @@
         display: block !important;
         position: absolute;
         bottom: -72px;
-        left: 0;
+        left: -72px;
+        right: 0;
 
         @media screen and (min-width: 768px) {
             bottom: -178px;
             left: 74px;
+            right: auto;
         }
     }
 }

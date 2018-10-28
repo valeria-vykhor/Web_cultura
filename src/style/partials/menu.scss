@@ -11,11 +11,15 @@
 
         @media screen and (min-width: 768px) {
             top: 75px;
+            right: -60px;
+        }
+
+        @media screen and (min-width: 1180px) {
             right: -80px;
         }
     }
 
-    p {
+    p, button {
         margin-left: 25px;
         font-weight: 500;
         @extend .text-uppercase;
@@ -27,6 +31,10 @@
             margin-left: 16px;
             font-size: 0.77rem;
         }
+    }
+
+    button {
+        pointer-events: all;
     }
 
     &__img {

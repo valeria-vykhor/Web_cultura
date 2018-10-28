@@ -9,8 +9,14 @@
         padding-top: 39px;
     }
 
+    .container {
+        @media screen and (min-width: 1400px) {
+            max-width: 1260px;
+        }
+    }
+
     .menu__container {
-        top: 0;
+        top: -20px;
     }
 
     .service__item-container {
@@ -22,7 +28,7 @@
 
     .service__item {
         max-width: 264px;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
 
         @media screen and (min-width: 768px) {
             margin-bottom: 77px;
@@ -35,7 +41,11 @@
 
             &:first-child {
                 font-size: 1.5rem;
-                padding-bottom: 33px;
+                padding-bottom: 13px;
+
+                @media screen and (min-width: 768px) {
+                    padding-bottom: 29px;
+                }
             }
         }
     }
@@ -104,6 +114,10 @@
             top: 125px !important;
         }
 
+        @media screen and (min-width: 1400px) {
+            top: 190px;
+        }
+
         p {
             font-weight: 400;
             position: relative;
@@ -116,7 +130,15 @@
                 top: -7px;
                 height: 249px;
                 width: 1px;
-                background-color: #d4d4d4;
+                background-color: #232323;
+
+                @media screen and (min-width: 650px) and (max-width: 767px) {
+                    left: -30px;
+                }
+
+                @media screen and (min-width: 807px) and (max-width: 990px) {
+                    left: -77px;
+                }
             }
         }
     }
@@ -127,32 +149,18 @@
         right: 0;
         bottom: -2px;
         width: 100%;
-        height: 270px;
         background-color: #232323;
-
-        @media screen and (min-width: 550px) {
-            height: 204px;
-        }
 
         @media screen and (min-width: 768px) {
             bottom: 96px;
         }
-
-        .position-relative {
-            height: 100%;
-        }
     }
 
     .service__bottom-container {
-        padding: 25px 20px 0;
-
-        @media screen and (min-width: 550px) {
-            padding: 52px 25px 0 65px;
-        }
-
-        @media screen and (min-width: 768px) {
-            padding: 25px 25px 0 65px;
-        }
+        padding: 52px 25px 60px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         
         p {
             line-height: 1.31rem;
@@ -170,5 +178,10 @@
         right: 0;
         width: 76%;
         height: 26px;
+
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+            max-width: 866px;
+        }
     }
 }
