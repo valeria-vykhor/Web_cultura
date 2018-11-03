@@ -1,19 +1,24 @@
 .portfolio {
-    background-color: #232323;
-    padding-top: 96px;
     overflow: hidden;
+    background-color: #232323;
 
     @media screen and (min-width: 1025px) {
         min-height: 100vh;
     }
 
-    @media screen and (max-width: 767px) {
-        padding-bottom: 80px;
-        padding-top: 0;
-    }
+    .portfolio__container {
+        padding-top: 96px;
+        background-color: #232323;
 
-    @media screen and (max-width: 576px) {
-        padding-top: 55px;
+        @media screen and (max-width: 767px) {
+            padding-bottom: 80px;
+            padding-top: 0;
+        }
+    
+        @media screen and (max-width: 576px) {
+            padding-top: 55px;
+        }
+    
     }
 
     .portfolio__wrapp {
@@ -36,7 +41,6 @@
     }
 
     &__container {
-        max-width: 1140px;
         margin: 0 auto;
         position: relative;
     }
@@ -78,4 +82,5 @@
 .portfolio__after {
     width: 50%;
     margin-top: -2px;
+    position: absolute;
 }

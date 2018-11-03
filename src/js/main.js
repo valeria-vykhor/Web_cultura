@@ -47,7 +47,7 @@ $(document).ready(function(){
                 items: 5
             },
             768:{
-                items: 5
+                items: 6
             },
             1400:{
                 items: 6

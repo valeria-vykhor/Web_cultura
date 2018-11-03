@@ -21,6 +21,7 @@
         padding: 48px 0 361px 25px;
         position: relative;
         margin: 10px 0 0 27px;
+        position: static;
 
         @media screen and (min-width: 768px) {
             padding: 48px 0 361px 40px;
@@ -84,7 +85,7 @@
     }
 
     &__bg-bottom {
-        height: 333px; 
+        height: 360px; 
         width: 100%;
         position: absolute;
         right: 0;

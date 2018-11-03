@@ -30,7 +30,17 @@ a:hover {
 body {
     font-family: $roboto;
     font-weight: 300;
-    color: rgba(18, 18, 18, 255);
+	color: rgba(18, 18, 18, 255);
+}
+
+.bg-wrapp {
+	overflow: hidden;
+}
+
+.bg-wrapp-sm {
+	@media screen and (max-width: 767px) {
+		overflow: hidden;
+	}
 }
 
 @font-face {
