@@ -2,23 +2,18 @@
     overflow: hidden;
     background-color: #232323;
 
-    @media screen and (min-width: 1025px) {
-        min-height: 100vh;
-    }
-
     .portfolio__container {
-        padding-top: 96px;
         background-color: #232323;
+        padding-top: 96px;
 
         @media screen and (max-width: 767px) {
-            padding-bottom: 80px;
+            padding-bottom: 30px;
             padding-top: 0;
         }
-    
-        @media screen and (max-width: 576px) {
-            padding-top: 55px;
-        }
-    
+    }
+
+    .logo__flex-container {
+        padding: 0 15px;
     }
 
     .portfolio__wrapp {
@@ -33,11 +28,7 @@
 
     .menu__container {
         top: -70px;
-        right: 0;
-
-        @media screen and (min-width: 1250px) {
-            right: -80px;
-        }
+        right: -20px;
     }
 
     &__container {
@@ -45,11 +36,20 @@
         position: relative;
     }
 
+    &__btn-bg {
+        position: relative;
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 80px;
+            padding-top: 0;
+        }
+    }
+
     &__btn-container {
         display: flex;
         background-color: transparent;
         position: absolute;
-        top: 92px;
+        top: 85px;
         left: 0;
 
         @media screen and (max-width: 767px) {

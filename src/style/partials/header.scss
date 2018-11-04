@@ -88,12 +88,7 @@
         display: flex;
         justify-content: space-between;
         min-height: 212px;
-        max-width: 1160px !important;
         padding: 0 10px;
-
-        @media screen and (min-width: 1400px) {
-            max-width: 1360px !important;
-        }
     }
 
     &__caption {
@@ -159,6 +154,22 @@
                 font-size: 9.5rem !important;
                 margin-top: 31px;
             }
+        }
+    }
+    
+    .menu__container {
+        right: -65px;
+
+        @media screen and (min-width: 768px) {
+            right: -30px;
+        }
+
+        @media (min-width: 992px) {
+            right: -20px;
+        }
+
+        @media (min-width: 1024px) {
+            right: 60px;
         }
     }
 }

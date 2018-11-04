@@ -1,6 +1,6 @@
 .consult {
     background-color: #232323;
-    padding-top: 120px;
+    padding-top: 20px;
     padding-bottom: 12px;
 
     .container {
@@ -11,8 +11,8 @@
 
     @media screen and (min-width: 768px) {
         background-color: #232323;
-        padding-top: 80px;
         padding-bottom: 95px;
+        padding-top: 80px;
     }
 
     @media screen and (min-width: 1025px) {
@@ -27,11 +27,16 @@
 
     .menu__container {
         top: -22px;
+        right: -70px;
     }
 
     &__form {
         max-width: 524px;
-        margin: -96px auto 0;
+        margin: 0 auto;
+
+        @media screen and (min-width: 992px) {
+            margin: -90px auto 0;
+        }
 
         input, textarea {
             width: 100%;

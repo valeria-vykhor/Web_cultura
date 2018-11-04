@@ -19,12 +19,18 @@
 
     .menu__container {
         top: -22px;
+        right: -20px;
+
+        @media screen and (min-width: 1025px) {
+            right: 60px; 
+        }
     }
 
     &__dec-container {
         padding: 28px 0 5px 20px;
         position: relative;
-        margin: 20px 0 0 27px;
+        margin: 20px auto 0;
+        max-width: 960px;
 
         @media screen and (min-width: 768px) {
             padding: 28px 0 5px 25px;
