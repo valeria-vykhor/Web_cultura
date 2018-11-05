@@ -144,10 +144,8 @@
         left: -72px;
         right: 0;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             bottom: -170px;
-            left: 74px;
-            right: auto;
         }
     }
 }
