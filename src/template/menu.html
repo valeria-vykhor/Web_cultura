@@ -1,7 +1,52 @@
 <div class="menu">
     <div class="menu__container">
         <img class="menu__img" src="img/menu.png">
-        <p>меню</p>
+        <button data-toggle="modal" data-target="#navModal">меню</button>
         <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
+    </div>
+</div>
+<div class="modal fade modal-expand nav-modal" id="navModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-cross" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p class="display-4">Menu</p>
+            <nav>
+              <ul class="list-unstyled">
+                <li class="nav-item">
+                    <a class="nav-item-link" href="#main-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="#team-link">Видео о нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="#portfolio-link">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="#review-link">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="#consult-form">Связаться с нами</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+        <div class="modal-footer container">
+            <div class="row justify-content-md-between align-items-md-center width-100 no-gutters">
+                <div class="col-12 col-md-auto modal-footer-info">
+                    <a class="mail-link" href="mailto:sales@webcultura.com.ua">sales@webcultura.com.ua</a>
+                    <p class="text-uppercase">- Для заявок на разработку</p>
+                </div>
+                <div class="col-12 col-md-auto modal-footer-info">
+                    <p>2018 Web cultura studio</p>
+                    <img class="modal-nav-logo" src="img/logo.png" />
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
 </div>

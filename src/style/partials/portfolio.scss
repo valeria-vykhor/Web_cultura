@@ -84,3 +84,75 @@
     margin-top: -2px;
     position: absolute;
 }
+
+.portfolio-modal {
+    .modal-body {
+        max-width: 752px;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+
+        @media screen and (max-width: 991px) {
+            max-width: 650px;
+            padding: 0 20px;
+        }
+
+        @media screen and (min-width: 992px) {
+            padding-bottom: 100px;
+        }
+    }
+
+    .display-4 {
+        margin-bottom: 80px;
+        @media screen and (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    input, .btn-submit {
+        display: block;
+        width: 100%;
+    }
+
+    input {
+        border-bottom: 1px solid #000;
+        height: 70px;
+        margin-top: 50px;
+
+        @media screen and (max-width: 991px) {
+            height: 50px;
+            margin-top: 20px;
+        }
+
+        &::placeholder {
+            font-size: 1.6rem;
+            color: rgba(166,166,166,255);
+
+            @media screen and (max-width: 991px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .btn-submit {
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #47d2e7;
+        font-weight: 500;
+        font-size: 1.7em;
+        font-family: $caps;
+        margin: 120px 0 10px;
+        padding: 20px 0 12px;
+
+        @media screen and (max-width: 991px) {
+            margin: 70px 0 10px;
+            font-size: 1.3em;
+            padding: 19px 0 11px;
+        }
+    }
+
+    .modal-info {
+        max-width: 500px;
+        line-height: 1.2em;
+    }
+}

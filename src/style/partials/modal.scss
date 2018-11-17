@@ -1,0 +1,52 @@
+.modal-expand {
+    padding: 0 !important;
+
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        max-width: 100%;
+        min-height: 100vh;
+        opacity: 0.95;
+        border: none;
+    }
+
+    .modal-content {
+        height: auto;
+        min-height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        padding: 70px 50px 70px 0;
+
+        @media screen and (max-width: 991px) {
+            padding: 20px;
+        }
+    }
+
+    .close {
+        opacity: 1;
+    }
+
+    .close-cross {
+        font-weight: 200;
+        font-size: 4rem;
+        color: #000;
+
+        @media screen and (max-width: 991px) {
+            font-size: 3.2rem;
+        }
+    }
+
+    .display-4 {
+        font-size: 2.95rem !important;
+
+        @media screen and (max-width: 991px) {
+            font-size: 2.4rem !important;
+            line-height: 2.5rem !important;
+        }
+    }
+}

@@ -5,7 +5,7 @@
 $(document).ready(function(){
     deleteItems();
 
-    $(".portfolio-carousel").owlCarousel({
+    $('.portfolio-carousel').owlCarousel({
         loop: true,
         margin: 10,
         merge: true,
@@ -30,7 +30,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".review-carousel").owlCarousel({
+    $('.review-carousel').owlCarousel({
         loop: true,
         margin: 30,
         merge: true,
@@ -74,6 +74,11 @@ $(document).ready(function(){
             $('div.remove-item').remove();
         }
     }
+
+    $('.nav-item').click(function(e) {
+        $('.nav-modal, .modal-backdrop').hide();
+        $('html, body').removeClass('modal-open').css('padding-right', 0);
+    });
 });
 
 function scrollIntoElement(a) {

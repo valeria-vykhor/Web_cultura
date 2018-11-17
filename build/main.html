@@ -12,7 +12,7 @@
     <div>
         <div class="bg-wrapp">
             <div class="bg-wrapp-sm">
-                <header class="header">
+                <header class="header" id="main-link">
                     <div class="header__panel-container">
                         <div class="header__panel d-none d-md-block"></div>
                         <div class="header__panel"></div>
@@ -28,8 +28,53 @@
                             <div class="menu">
                                 <div class="menu__container">
                                     <img class="menu__img" src="img/menu.png">
-                                    <p>меню</p>
+                                    <button data-toggle="modal" data-target="#navModal">меню</button>
                                     <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
+                                </div>
+                            </div>
+                            <div class="modal fade modal-expand nav-modal" id="navModal">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="close-cross" aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="display-4">Menu</p>
+                                        <nav>
+                                          <ul class="list-unstyled">
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#main-link">Главная</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#team-link">Видео о нас</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#portfolio-link">Портфолио</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#review-link">Отзывы</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#consult-form">Связаться с нами</a>
+                                            </li>
+                                          </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="modal-footer container">
+                                        <div class="row justify-content-md-between align-items-md-center width-100 no-gutters">
+                                            <div class="col-12 col-md-auto modal-footer-info">
+                                                <a class="mail-link" href="mailto:sales@webcultura.com.ua">sales@webcultura.com.ua</a>
+                                                <p class="text-uppercase">- Для заявок на разработку</p>
+                                            </div>
+                                            <div class="col-12 col-md-auto modal-footer-info">
+                                                <p>2018 Web cultura studio</p>
+                                                <img class="modal-nav-logo" src="img/logo.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -52,8 +97,53 @@
                             <div class="menu">
                                 <div class="menu__container">
                                     <img class="menu__img" src="img/menu.png">
-                                    <p>меню</p>
+                                    <button data-toggle="modal" data-target="#navModal">меню</button>
                                     <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
+                                </div>
+                            </div>
+                            <div class="modal fade modal-expand nav-modal" id="navModal">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="close-cross" aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="display-4">Menu</p>
+                                        <nav>
+                                          <ul class="list-unstyled">
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#main-link">Главная</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#team-link">Видео о нас</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#portfolio-link">Портфолио</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#review-link">Отзывы</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item-link" href="#consult-form">Связаться с нами</a>
+                                            </li>
+                                          </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="modal-footer container">
+                                        <div class="row justify-content-md-between align-items-md-center width-100 no-gutters">
+                                            <div class="col-12 col-md-auto modal-footer-info">
+                                                <a class="mail-link" href="mailto:sales@webcultura.com.ua">sales@webcultura.com.ua</a>
+                                                <p class="text-uppercase">- Для заявок на разработку</p>
+                                            </div>
+                                            <div class="col-12 col-md-auto modal-footer-info">
+                                                <p>2018 Web cultura studio</p>
+                                                <img class="modal-nav-logo" src="img/logo.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +205,7 @@
                     </div>
                 </section>
             </div>
-            <section class="team">
+            <section class="team" id="team-link">
                 <div class="video__wrapper">
                     <iframe class="video__iframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/G4cJ4wviwS8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
                     <div class="video__poster-container">
@@ -133,7 +223,7 @@
                             <div class="menu">
                                 <div class="menu__container text-white">
                                     <img class="menu__img" src="img/menu-wt.png">
-                                    <p>меню</p>
+                                    <button class="text-white" data-toggle="modal" data-target="#navModal">меню</button>
                                     <button onclick="scrollIntoElement('portfolio-link')" class="text-white">portfolio</button>
                                  </div>
                             </div>
@@ -157,7 +247,7 @@
                                 <div class="menu">
                                     <div class="menu__container">
                                         <img class="menu__img" src="img/menu-wt.png">
-                                        <p>меню</p>
+                                        <button class="text-white" data-toggle="modal" data-target="#navModal">меню</button>
                                     </div>
                                 </div>
                             </div>
@@ -243,14 +333,52 @@
                             <div class="portfolio__btn-bg">
                                 <img class="img-fluid" src="img/portfolio-bg.png" alt="image">
                                 <div class="portfolio__btn-container">
-                                    <button onclick="scrollIntoElement('consult-form')">Бесплатная консультация</button>
-                                    <button onclick="scrollIntoElement('consult-form')">Узнать стоимость</button>
+                                    <button data-toggle="modal" data-target="#consultModal">Бесплатная консультация</button>
+                                    <button data-toggle="modal" data-target="#priceModal">Узнать стоимость</button>
                                 </div>
                             </div>
                 </div>
             </div>
             <div class="portfolio__after d-none d-md-block">
                 <img class="img-fluid" src="img/portfolio-after.png" alt="image">
+            </div>
+            <div class="modal fade modal-expand portfolio-modal" id="priceModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-cross" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="display-4">Узнать стоимость разработки</p>
+                      <input type="text" placeholder="Ваше имя">
+                      <input type="text" placeholder="Телефон или e-mail...">
+                      <button class="btn-submit" type="submit">Связаться со мной</button>
+                      <p class="modal-info">Нам нужны Ваши контакты только для того, что бы предоставить информацию по Вашему проекту.</p>
+                      <p class="modal-info">Мы не передаем их третьим лицам и не используем рассылок.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade modal-expand portfolio-modal" id="consultModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-cross" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="display-4">Получить консультацию по проекту</p>
+                      <input type="text" placeholder="Ваше имя">
+                      <input type="text" placeholder="Телефон или e-mail...">
+                      <button class="btn-submit" type="submit">Связаться со мной</button>
+                      <p class="modal-info">Нам нужны Ваши контакты только для того, что бы предоставить информацию по Вашему проекту.</p>
+                      <p class="modal-info">Мы не передаем их третьим лицам и не используем рассылок.</p>
+                    </div>
+                  </div>
+                </div>
             </div>
             <section class="advantages">
                 <div class="d-none d-lg-block">
@@ -261,8 +389,53 @@
                         <div class="menu">
                             <div class="menu__container">
                                 <img class="menu__img" src="img/menu.png">
-                                <p>меню</p>
+                                <button data-toggle="modal" data-target="#navModal">меню</button>
                                 <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
+                            </div>
+                        </div>
+                        <div class="modal fade modal-expand nav-modal" id="navModal">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="close-cross" aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="display-4">Menu</p>
+                                    <nav>
+                                      <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#main-link">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#team-link">Видео о нас</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#portfolio-link">Портфолио</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#review-link">Отзывы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#consult-form">Связаться с нами</a>
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                </div>
+                                <div class="modal-footer container">
+                                    <div class="row justify-content-md-between align-items-md-center width-100 no-gutters">
+                                        <div class="col-12 col-md-auto modal-footer-info">
+                                            <a class="mail-link" href="mailto:sales@webcultura.com.ua">sales@webcultura.com.ua</a>
+                                            <p class="text-uppercase">- Для заявок на разработку</p>
+                                        </div>
+                                        <div class="col-12 col-md-auto modal-footer-info">
+                                            <p>2018 Web cultura studio</p>
+                                            <img class="modal-nav-logo" src="img/logo.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -309,7 +482,7 @@
                     </div>
                 </div>
             </section>
-            <section class="review">
+            <section class="review" id="review-link">
                 <div class="d-none d-lg-block">
                     <div class="logo__flex-container container-fluid">
                         <div class="logo">
@@ -318,8 +491,53 @@
                         <div class="menu">
                             <div class="menu__container">
                                 <img class="menu__img" src="img/menu.png">
-                                <p>меню</p>
+                                <button data-toggle="modal" data-target="#navModal">меню</button>
                                 <button onclick="scrollIntoElement('portfolio-link')">portfolio</button>
+                            </div>
+                        </div>
+                        <div class="modal fade modal-expand nav-modal" id="navModal">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="close-cross" aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="display-4">Menu</p>
+                                    <nav>
+                                      <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#main-link">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#team-link">Видео о нас</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#portfolio-link">Портфолио</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#review-link">Отзывы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item-link" href="#consult-form">Связаться с нами</a>
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                </div>
+                                <div class="modal-footer container">
+                                    <div class="row justify-content-md-between align-items-md-center width-100 no-gutters">
+                                        <div class="col-12 col-md-auto modal-footer-info">
+                                            <a class="mail-link" href="mailto:sales@webcultura.com.ua">sales@webcultura.com.ua</a>
+                                            <p class="text-uppercase">- Для заявок на разработку</p>
+                                        </div>
+                                        <div class="col-12 col-md-auto modal-footer-info">
+                                            <p>2018 Web cultura studio</p>
+                                            <img class="modal-nav-logo" src="img/logo.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -404,7 +622,7 @@
                         <div class="menu">
                             <div class="menu__container text-white">
                                 <img class="menu__img" src="img/menu-wt.png">
-                                <p>меню</p>
+                                <button class="text-white" data-toggle="modal" data-target="#navModal">меню</button>
                                 <button onclick="scrollIntoElement('portfolio-link')" class="text-white">portfolio</button>
                              </div>
                         </div>
