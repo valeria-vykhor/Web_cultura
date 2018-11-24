@@ -12,6 +12,11 @@
             width: 100%;
             object-fit: cover;
             overflow: hidden;
+            height: 180px;
+
+            @media screen and (min-width: 400px) {
+                height: 240px;
+            }
 
             @media screen and (min-width: 500px) {
                 height: 298px;

@@ -46,42 +46,49 @@ $(document).ready(function(){
             495:{
                 items: 5
             },
-            768:{
-                items: 6
-            },
             1400:{
                 items: 6
             }
         }
     });
 
-    $(document).on('click','.video__poster',function(e) {      
-        e.preventDefault();
+    $(document).on('click','.video__poster',function(e) {
         var poster = $(this);
         var wrapper = poster.closest('.video__wrapper');
+
+        e.preventDefault();
+        
         videoPlay(wrapper);
     });
-      
-    function videoPlay(wrapper) {
-        var iframe = wrapper.find('.video__iframe');
-        var src = iframe.data('src');
-        wrapper.closest('.team').addClass('team__active');
-        iframe.attr('src',src);
-    }
 
-    function deleteItems() {
-        if ($('body').width() <= 767) {
-            $('div.remove-item').remove();
-        }
-    }
+    $('.nav-item-link').click(function(e) {
+        var link = $(this).attr('href');
 
-    $('.nav-item').click(function(e) {
-        $('.nav-modal, .modal-backdrop').hide();
-        $('html, body').removeClass('modal-open').css('padding-right', 0);
+        e.preventDefault();
+
+        scrollIntoElement(link);
+
+        $('.nav-modal').modal('hide');
     });
 });
 
-function scrollIntoElement(a) {
-    var element = document.getElementById(a);
-    element.scrollIntoView({ behavior: 'smooth', block: 'start', });
+function videoPlay(wrapper) {
+    var iframe = wrapper.find('.video__iframe');
+    var src = iframe.data('src');
+
+    wrapper.closest('.team').addClass('team__active');
+
+    iframe.attr('src',src);
+}
+
+function deleteItems() {
+    if ($('body').width() <= 767) {
+        $('div.remove-item').remove();
+    }
+}
+
+function scrollIntoElement(link) {
+    $('html, body').animate({
+        scrollTop: $(link).offset().top
+    }, 1200);
 }
